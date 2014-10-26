@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9861AE019FD229000015DD5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9861ADF19FD229000015DD5 /* Cocoa.framework */; };
+		A9861AEA19FD229000015DD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9861AE819FD229000015DD5 /* InfoPlist.strings */; };
+		A9861AEC19FD229000015DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861AEB19FD229000015DD5 /* main.m */; };
+		A9861AF019FD229000015DD5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A9861AEE19FD229000015DD5 /* Credits.rtf */; };
+		A9861AF319FD229000015DD5 /* SIPOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861AF219FD229000015DD5 /* SIPOAppDelegate.m */; };
+		A9861AF619FD229100015DD5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9861AF419FD229100015DD5 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9861ADC19FD229000015DD5 /* SIPropertyObjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPropertyObjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9861ADF19FD229000015DD5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A9861AE219FD229000015DD5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A9861AE319FD229000015DD5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A9861AE419FD229000015DD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9861AE719FD229000015DD5 /* SIPropertyObjects-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SIPropertyObjects-Info.plist"; sourceTree = "<group>"; };
+		A9861AE919FD229000015DD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9861AEB19FD229000015DD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9861AED19FD229000015DD5 /* SIPropertyObjects-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIPropertyObjects-Prefix.pch"; sourceTree = "<group>"; };
+		A9861AEF19FD229000015DD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A9861AF119FD229000015DD5 /* SIPOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIPOAppDelegate.h; sourceTree = "<group>"; };
+		A9861AF219FD229000015DD5 /* SIPOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPOAppDelegate.m; sourceTree = "<group>"; };
+		A9861AF519FD229100015DD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9861AD919FD229000015DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9861AE019FD229000015DD5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9861AD319FD229000015DD5 = {
+			isa = PBXGroup;
+			children = (
+				A9861AE519FD229000015DD5 /* SIPropertyObjects */,
+				A9861ADE19FD229000015DD5 /* Frameworks */,
+				A9861ADD19FD229000015DD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9861ADD19FD229000015DD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9861ADC19FD229000015DD5 /* SIPropertyObjects.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9861ADE19FD229000015DD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9861ADF19FD229000015DD5 /* Cocoa.framework */,
+				A9861AE119FD229000015DD5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9861AE119FD229000015DD5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9861AE219FD229000015DD5 /* AppKit.framework */,
+				A9861AE319FD229000015DD5 /* CoreData.framework */,
+				A9861AE419FD229000015DD5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A9861AE519FD229000015DD5 /* SIPropertyObjects */ = {
+			isa = PBXGroup;
+			children = (
+				A9861AF119FD229000015DD5 /* SIPOAppDelegate.h */,
+				A9861AF219FD229000015DD5 /* SIPOAppDelegate.m */,
+				A9861AF419FD229100015DD5 /* MainMenu.xib */,
+				A9861AE619FD229000015DD5 /* Supporting Files */,
+			);
+			path = SIPropertyObjects;
+			sourceTree = "<group>";
+		};
+		A9861AE619FD229000015DD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9861AE719FD229000015DD5 /* SIPropertyObjects-Info.plist */,
+				A9861AE819FD229000015DD5 /* InfoPlist.strings */,
+				A9861AEB19FD229000015DD5 /* main.m */,
+				A9861AED19FD229000015DD5 /* SIPropertyObjects-Prefix.pch */,
+				A9861AEE19FD229000015DD5 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9861ADB19FD229000015DD5 /* SIPropertyObjects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9861AF919FD229100015DD5 /* Build configuration list for PBXNativeTarget "SIPropertyObjects" */;
+			buildPhases = (
+				A9861AD819FD229000015DD5 /* Sources */,
+				A9861AD919FD229000015DD5 /* Frameworks */,
+				A9861ADA19FD229000015DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SIPropertyObjects;
+			productName = SIPropertyObjects;
+			productReference = A9861ADC19FD229000015DD5 /* SIPropertyObjects.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9861AD419FD229000015DD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SIPO;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Studio Istanbul Medya Hiz. Tic. Ltd. Sti.";
+			};
+			buildConfigurationList = A9861AD719FD229000015DD5 /* Build configuration list for PBXProject "SIPropertyObjects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9861AD319FD229000015DD5;
+			productRefGroup = A9861ADD19FD229000015DD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9861ADB19FD229000015DD5 /* SIPropertyObjects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9861ADA19FD229000015DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9861AEA19FD229000015DD5 /* InfoPlist.strings in Resources */,
+				A9861AF019FD229000015DD5 /* Credits.rtf in Resources */,
+				A9861AF619FD229100015DD5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9861AD819FD229000015DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9861AEC19FD229000015DD5 /* main.m in Sources */,
+				A9861AF319FD229000015DD5 /* SIPOAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9861AE819FD229000015DD5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9861AE919FD229000015DD5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9861AEE19FD229000015DD5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9861AEF19FD229000015DD5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A9861AF419FD229100015DD5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9861AF519FD229100015DD5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9861AF719FD229100015DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A9861AF819FD229100015DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A9861AFA19FD229100015DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SIPropertyObjects/SIPropertyObjects-Prefix.pch";
+				INFOPLIST_FILE = "SIPropertyObjects/SIPropertyObjects-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9861AFB19FD229100015DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SIPropertyObjects/SIPropertyObjects-Prefix.pch";
+				INFOPLIST_FILE = "SIPropertyObjects/SIPropertyObjects-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9861AD719FD229000015DD5 /* Build configuration list for PBXProject "SIPropertyObjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9861AF719FD229100015DD5 /* Debug */,
+				A9861AF819FD229100015DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9861AF919FD229100015DD5 /* Build configuration list for PBXNativeTarget "SIPropertyObjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9861AFA19FD229100015DD5 /* Debug */,
+				A9861AFB19FD229100015DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9861AD419FD229000015DD5 /* Project object */;
+}
