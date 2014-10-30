@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A94F03A91A0281960030F131 /* NSString+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F03A81A0281960030F131 /* NSString+Base64Additions.m */; };
 		A9861AE019FD229000015DD5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9861ADF19FD229000015DD5 /* Cocoa.framework */; };
 		A9861AEA19FD229000015DD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9861AE819FD229000015DD5 /* InfoPlist.strings */; };
 		A9861AEC19FD229000015DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861AEB19FD229000015DD5 /* main.m */; };
 		A9861AF019FD229000015DD5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A9861AEE19FD229000015DD5 /* Credits.rtf */; };
 		A9861AF319FD229000015DD5 /* SIPOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861AF219FD229000015DD5 /* SIPOAppDelegate.m */; };
 		A9861AF619FD229100015DD5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9861AF419FD229100015DD5 /* MainMenu.xib */; };
+		A9861AFE19FD22B800015DD5 /* SIPOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861AFD19FD22B800015DD5 /* SIPOObject.m */; };
+		A9861B0419FFCD9700015DD5 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861B0319FFCD9700015DD5 /* Base64.m */; };
+		A9861B0719FFF64300015DD5 /* SIPODataView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861B0619FFF64300015DD5 /* SIPODataView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A94F03A71A0281960030F131 /* NSString+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64Additions.h"; sourceTree = "<group>"; };
+		A94F03A81A0281960030F131 /* NSString+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64Additions.m"; sourceTree = "<group>"; };
 		A9861ADC19FD229000015DD5 /* SIPropertyObjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPropertyObjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9861ADF19FD229000015DD5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A9861AE219FD229000015DD5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +35,12 @@
 		A9861AF119FD229000015DD5 /* SIPOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIPOAppDelegate.h; sourceTree = "<group>"; };
 		A9861AF219FD229000015DD5 /* SIPOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPOAppDelegate.m; sourceTree = "<group>"; };
 		A9861AF519FD229100015DD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A9861AFC19FD22B800015DD5 /* SIPOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPOObject.h; sourceTree = "<group>"; };
+		A9861AFD19FD22B800015DD5 /* SIPOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPOObject.m; sourceTree = "<group>"; };
+		A9861B0219FFCD9700015DD5 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = Base64/Base64/Base64.h; sourceTree = SOURCE_ROOT; };
+		A9861B0319FFCD9700015DD5 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = Base64/Base64/Base64.m; sourceTree = SOURCE_ROOT; };
+		A9861B0519FFF64300015DD5 /* SIPODataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPODataView.h; sourceTree = "<group>"; };
+		A9861B0619FFF64300015DD5 /* SIPODataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPODataView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +94,16 @@
 		A9861AE519FD229000015DD5 /* SIPropertyObjects */ = {
 			isa = PBXGroup;
 			children = (
+				A94F03A71A0281960030F131 /* NSString+Base64Additions.h */,
+				A94F03A81A0281960030F131 /* NSString+Base64Additions.m */,
+				A9861B0219FFCD9700015DD5 /* Base64.h */,
+				A9861B0319FFCD9700015DD5 /* Base64.m */,
+				A9861AFC19FD22B800015DD5 /* SIPOObject.h */,
+				A9861AFD19FD22B800015DD5 /* SIPOObject.m */,
 				A9861AF119FD229000015DD5 /* SIPOAppDelegate.h */,
 				A9861AF219FD229000015DD5 /* SIPOAppDelegate.m */,
+				A9861B0519FFF64300015DD5 /* SIPODataView.h */,
+				A9861B0619FFF64300015DD5 /* SIPODataView.m */,
 				A9861AF419FD229100015DD5 /* MainMenu.xib */,
 				A9861AE619FD229000015DD5 /* Supporting Files */,
 			);
@@ -169,6 +189,10 @@
 			files = (
 				A9861AEC19FD229000015DD5 /* main.m in Sources */,
 				A9861AF319FD229000015DD5 /* SIPOAppDelegate.m in Sources */,
+				A9861AFE19FD22B800015DD5 /* SIPOObject.m in Sources */,
+				A9861B0419FFCD9700015DD5 /* Base64.m in Sources */,
+				A9861B0719FFF64300015DD5 /* SIPODataView.m in Sources */,
+				A94F03A91A0281960030F131 /* NSString+Base64Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +328,7 @@
 				A9861AFB19FD229100015DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
