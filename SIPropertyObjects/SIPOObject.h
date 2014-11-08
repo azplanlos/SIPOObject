@@ -35,5 +35,6 @@
 -(void)addObject:(SIPOObject*)childObject;
 
 +(SIPOObject*)lastObjectInArray:(NSArray*)array atLevel:(NSInteger)level;
++(id)valueForName:(NSString*)name inArray:(NSArray*)array;
 
 @end

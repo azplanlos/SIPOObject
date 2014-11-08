@@ -211,9 +211,25 @@
 
 -(SIPOObject*)childWithName:(NSString *)sname {
     for (SIPOObject* child in self.childs) {
-        if ([child.name isEqualToString:sname]) return child;
+        if ([child.name isEqualToString:sname]) {
+            return child;
+        }
     }
     return nil;
+}
+
++(id)valueForName:(NSString*)name inArray:(NSArray*)array {
+    SIPOObject* obj = nil;
+    for (SIPOObject* sobj in array) {
+        if ([sobj.name isEqualToString:name]) {
+            obj = sobj;
+        } else {
+            obj = [sobj childWithName:name];
+        }
+        if (obj) break;
+    }
+    if (!obj) NSLog(@"object with name %@ not found", name);
+    return obj.value;
 }
 
 @end
