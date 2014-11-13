@@ -59,6 +59,10 @@
                 myRootObject.numberValue = [NSDecimalNumber decimalNumberWithString:valueString locale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
             } else if (myRootObject.type == SIPOObjectDataValue) {
                 myRootObject.dataValue = [valueString base64DecodedData];
+            } else if (myRootObject.type == SIPOObjectColorValue) {
+                NSArray* colorComps = [valueString componentsSeparatedByString:@"/"];
+                NSColor* col = [NSColor colorWithCalibratedRed:[[colorComps objectAtIndex:0] doubleValue] green:[[colorComps objectAtIndex:1] doubleValue] blue:[[colorComps objectAtIndex:2] doubleValue] alpha:[[colorComps objectAtIndex:3] doubleValue]];
+                myRootObject.colorValue = col;
             }
             
             id parent = contents;
@@ -103,6 +107,10 @@
         xvalue = self.boolValue ? @"<@YES>" : @"<@NO>";
     } else if (self.type == SIPOObjectDataValue) {
         xvalue = [self.dataValue base64EncodedString];
+    } else if (self.type == SIPOObjectColorValue) {
+        CGFloat red, green, blue, alpha;
+        [self.colorValue getRed:&red green:&green blue:&blue alpha:&alpha];
+        xvalue = [NSString stringWithFormat:@"%0.3f/%0.3f/%0.3f/%0.3f", red, green, blue, alpha];
     }
     NSString* repString = [NSString stringWithFormat:@"%@\t%li\t%@\n", name, type, xvalue];
     for (SIPOObject* child in childs) {
@@ -207,6 +215,15 @@
 
 -(void)setDataValue:(NSData *)dataValue {
     self.value = dataValue;
+}
+
+-(NSColor*)colorValue {
+    if (self.type == SIPOObjectColorValue) return value;
+    return nil;
+}
+
+-(void)setColorValue:(NSColor *)colorValue {
+    self.value = colorValue;
 }
 
 -(SIPOObject*)childWithName:(NSString *)sname {

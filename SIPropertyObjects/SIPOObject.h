@@ -20,12 +20,14 @@
 @property (assign, nonatomic) NSNumber* numberValue;
 @property (assign, nonatomic) NSNumber* boolTagValue;
 @property (assign, nonatomic) NSData* dataValue;
+@property (assign, nonatomic) NSColor* colorValue;
 
 
 #define SIPOObjectStringValue   0
 #define SIPOObjectNumberValue   1
 #define SIPOObjectBOOLValue 2
 #define SIPOObjectDataValue 3
+#define SIPOObjectColorValue    4
 
 +(void)saveArray:(NSArray*)array toURL:(NSURL*)fileURL;
 +(NSMutableArray*)arrayOfObjectsWithContentsOfURL:(NSURL *)fileURL;

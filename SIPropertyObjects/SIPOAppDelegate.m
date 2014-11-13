@@ -58,6 +58,8 @@
             [valueView addSubview:self.numberValueView];
         } else if (((SIPOObject*)contentController.selectedObjects.lastObject).type == SIPOObjectDataValue) {
             [valueView addSubview:self.dataValueView];
+        } else if (((SIPOObject*)contentController.selectedObjects.lastObject).type == SIPOObjectColorValue) {
+            [valueView addSubview:self.colorValueView];
         }
     }
 }

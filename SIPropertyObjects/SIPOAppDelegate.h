@@ -19,6 +19,7 @@
 @property (assign) IBOutlet NSView* boolValueView;
 @property (assign) IBOutlet NSView* numberValueView;
 @property (assign) IBOutlet SIPODataView* dataValueView;
+@property (assign) IBOutlet NSView* colorValueView;
 
 
 @property (strong, nonatomic) NSMutableArray* editorContent;
