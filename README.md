@@ -60,7 +60,7 @@ To search for a specific in a NSArray of SIPOObject instances use
 	+(id)valueForName:(NSString*)name inArray:(NSArray*)array;
 
 
-save NSArray with SIPOObject instances to a file URL:
+Save NSArray with SIPOObject instances to a file URL:
 
     +(void)saveArray:(NSArray*)array toURL:(NSURL*)fileURL;
 
@@ -71,7 +71,6 @@ Please refer to the included editor project as example on how to use this class.
 ##Editor
 
 This repository includes an Cocoa editor project to demonstrate functionality of this class and to edit files including SIPOObject instances.
-
 
 ##ARC
 
