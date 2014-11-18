@@ -37,7 +37,6 @@
             while (((NSString*)[components objectAtIndex:level]).length == 0) {
                 level++;
             }
-            NSLog(@"adding obj at level %li", level);
             SIPOObject* myRootObject = [[SIPOObject alloc] init];
             
             myRootObject.type = [[components objectAtIndex:level+1] intValue];
@@ -46,13 +45,11 @@
             
             NSString* valueString = [components objectAtIndex:level+2];
             if ([valueString rangeOfCharacterFromSet:[NSCharacterSet newlineCharacterSet]].location != NSNotFound) {
-                NSLog(@"content contains newLine!");
                 valueString = [valueString substringToIndex:[valueString rangeOfCharacterFromSet:[NSCharacterSet newlineCharacterSet]].location-1];
             }
             
             if (myRootObject.type == SIPOObjectStringValue) {
                 if ([valueString isBase64Data]) {
-                    NSLog(@"content string seems to be Base64 encoded");
                     valueString = [valueString base64DecodedString];
                 }
                 myRootObject.value = valueString;
@@ -81,7 +78,6 @@
 }
 
 +(void)saveArray:(NSArray*)array toURL:(NSURL *)fileURL {
-    NSLog(@"saving array");
     NSString* content = [NSString string];
     for (SIPOObject* object in array) {
         content = [content stringByAppendingFormat:@"%@\n", [object stringRepresentationAtLevel:0]];
@@ -142,16 +138,13 @@
 -(void)setValue:(id)xvalue {
     if (self.type == SIPOObjectBOOLValue) {
         value = ([xvalue intValue] == 0) ? [NSNumber numberWithBool:YES] : [NSNumber numberWithBool:NO];
-        NSLog(@"saved bool");
     } else {
         value = xvalue;
-        NSLog(@"saving value");
     }
 }
 
 -(id)value {
     if (self.type == SIPOObjectBOOLValue) {
-        NSLog(@"read bool");
         return ([value boolValue] == YES) ? [NSNumber numberWithInt:0] : [NSNumber numberWithInt:1];
     } else {
         return value;
@@ -171,7 +164,6 @@
 }
 
 -(void)setDefaultValue {
-    NSLog(@"set default for type %li", type);
     if (type == SIPOObjectNumberValue)
         value = @(0);
     else if (type == SIPOObjectBOOLValue)
