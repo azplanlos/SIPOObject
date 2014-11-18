@@ -231,6 +231,10 @@
 }
 
 +(id)valueForName:(NSString*)name inArray:(NSArray*)array {
+    return [SIPOObject objectForName:name inArray:array].value;
+}
+
++(SIPOObject*)objectForName:(NSString *)name inArray:(NSArray *)array {
     SIPOObject* obj = nil;
     for (SIPOObject* sobj in array) {
         if ([sobj.name isEqualToString:name]) {
@@ -241,7 +245,7 @@
         if (obj) break;
     }
     if (!obj) NSLog(@"object with name %@ not found", name);
-    return obj.value;
+    return obj;
 }
 
 +(SIPOObject*)objectWithValue:(id)svalue inArray:(NSArray *)array maxLevel:(NSInteger)level {
