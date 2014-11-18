@@ -27,7 +27,10 @@
     NSString* repString = [NSString stringWithContentsOfURL:fileURL encoding:NSUTF8StringEncoding error:nil];
     NSArray* lines = [repString componentsSeparatedByString:@"\n"];
     NSMutableArray* contents = [[NSMutableArray alloc] init];
-    for (NSString* line in lines) {
+    NSRegularExpression* regexp = [NSRegularExpression regularExpressionWithPattern:@" {4}" options:NSRegularExpressionCaseInsensitive error:nil];
+    for (NSString* xline in lines) {
+        NSString* line = xline;
+        line = [regexp stringByReplacingMatchesInString:line options:0 range:NSMakeRange(0, line.length) withTemplate:@"\t"];
         if ([line rangeOfString:@"\t"].location != NSNotFound) {
             NSArray* components = [line componentsSeparatedByString:@"\t"];
             NSInteger level = 0;
