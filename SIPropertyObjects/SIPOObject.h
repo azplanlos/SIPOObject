@@ -39,4 +39,10 @@
 +(SIPOObject*)lastObjectInArray:(NSArray*)array atLevel:(NSInteger)level;
 +(id)valueForName:(NSString*)name inArray:(NSArray*)array;
 
++(SIPOObject*)objectWithIntegerValue:(NSInteger)integerValue inArray:(NSArray*)array;
++(SIPOObject*)objectWithIntegerValue:(NSInteger)integerValue inArray:(NSArray*)array maxLevel:(NSInteger)level;
++(SIPOObject*)objectWithValue:(id)value inArray:(NSArray*)array;
++(SIPOObject*)objectWithValue:(id)value inArray:(NSArray*)array maxLevel:(NSInteger)level;
+
+
 @end

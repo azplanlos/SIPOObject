@@ -249,4 +249,34 @@
     return obj.value;
 }
 
++(SIPOObject*)objectWithValue:(id)svalue inArray:(NSArray *)array maxLevel:(NSInteger)level {
+    SIPOObject* obj = nil;
+    for (SIPOObject* sobj in array) {
+        if (sobj.type != SIPOObjectBOOLValue) {
+            if ([sobj.value isEqualTo:svalue]) {
+                obj = sobj;
+                break;
+            }
+        }
+        if (sobj.childs.count > 0 && level > 0 && !obj) {
+            obj = [SIPOObject objectWithValue:svalue inArray:sobj.childs maxLevel:level-1];
+            if (obj) break;
+        }
+    }
+    return obj;
+}
+
++(SIPOObject*)objectWithIntegerValue:(NSInteger)integerValue inArray:(NSArray *)array {
+    return [SIPOObject objectWithValue:[NSNumber numberWithInteger:integerValue] inArray:array maxLevel:NSIntegerMax];
+}
+
++(SIPOObject*)objectWithIntegerValue:(NSInteger)integerValue inArray:(NSArray *)array maxLevel:(NSInteger)level {
+    return [SIPOObject objectWithValue:[NSNumber numberWithInteger:integerValue] inArray:array maxLevel:level];
+}
+
+
++(SIPOObject*)objectWithValue:(id)value inArray:(NSArray *)array {
+    return [SIPOObject objectWithValue:value inArray:array maxLevel:NSIntegerMax];
+}
+
 @end
