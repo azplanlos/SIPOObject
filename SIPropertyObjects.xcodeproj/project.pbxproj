@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A94F03A71A0281960030F131 /* NSString+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64Additions.h"; sourceTree = "<group>"; };
-		A94F03A81A0281960030F131 /* NSString+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64Additions.m"; sourceTree = "<group>"; };
+		A94F03A71A0281960030F131 /* NSString+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Base64Additions.h"; path = "../HelperCategories/NSString+Base64Additions.h"; sourceTree = "<group>"; };
+		A94F03A81A0281960030F131 /* NSString+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Base64Additions.m"; path = "../HelperCategories/NSString+Base64Additions.m"; sourceTree = "<group>"; };
 		A9861ADC19FD229000015DD5 /* SIPropertyObjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPropertyObjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9861ADF19FD229000015DD5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A9861AE219FD229000015DD5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
