@@ -7,19 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A94F03A91A0281960030F131 /* NSString+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F03A81A0281960030F131 /* NSString+Base64Additions.m */; };
+		A94399451AC59AEE00F3D4A5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9861ADF19FD229000015DD5 /* Cocoa.framework */; };
+		A94399531AC59B3500F3D4A5 /* SIPOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861AFD19FD22B800015DD5 /* SIPOObject.m */; };
+		A94399541AC59B3C00F3D4A5 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861B0319FFCD9700015DD5 /* Base64.m */; };
+		A94399551AC59B4400F3D4A5 /* NSString+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F03A81A0281960030F131 /* NSString+Base64Additions.m */; };
+		A94399581AC59B6400F3D4A5 /* SIPropertyObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94399441AC59AEE00F3D4A5 /* SIPropertyObjects.framework */; };
+		A943995A1AC59B7D00F3D4A5 /* SIPropertyObjects.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A94399441AC59AEE00F3D4A5 /* SIPropertyObjects.framework */; };
+		A943995C1AC59B9300F3D4A5 /* SIPOObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9861AFC19FD22B800015DD5 /* SIPOObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A943995D1AC59B9A00F3D4A5 /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = A9861B0219FFCD9700015DD5 /* Base64.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A943995E1AC59BA000F3D4A5 /* NSString+Base64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = A94F03A71A0281960030F131 /* NSString+Base64Additions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A943995F1AC59E4C00F3D4A5 /* SIPropertyObjects-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9861AE719FD229000015DD5 /* SIPropertyObjects-Info.plist */; };
 		A9861AE019FD229000015DD5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9861ADF19FD229000015DD5 /* Cocoa.framework */; };
 		A9861AEA19FD229000015DD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9861AE819FD229000015DD5 /* InfoPlist.strings */; };
 		A9861AEC19FD229000015DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861AEB19FD229000015DD5 /* main.m */; };
 		A9861AF019FD229000015DD5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A9861AEE19FD229000015DD5 /* Credits.rtf */; };
 		A9861AF319FD229000015DD5 /* SIPOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861AF219FD229000015DD5 /* SIPOAppDelegate.m */; };
 		A9861AF619FD229100015DD5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9861AF419FD229100015DD5 /* MainMenu.xib */; };
-		A9861AFE19FD22B800015DD5 /* SIPOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861AFD19FD22B800015DD5 /* SIPOObject.m */; };
-		A9861B0419FFCD9700015DD5 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861B0319FFCD9700015DD5 /* Base64.m */; };
 		A9861B0719FFF64300015DD5 /* SIPODataView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9861B0619FFF64300015DD5 /* SIPODataView.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A94399561AC59B5C00F3D4A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9861AD419FD229000015DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94399431AC59AEE00F3D4A5;
+			remoteInfo = SIPropertyObjects;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A94399591AC59B6B00F3D4A5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A943995A1AC59B7D00F3D4A5 /* SIPropertyObjects.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A94399441AC59AEE00F3D4A5 /* SIPropertyObjects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SIPropertyObjects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94F03A71A0281960030F131 /* NSString+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Base64Additions.h"; path = "../HelperCategories/NSString+Base64Additions.h"; sourceTree = "<group>"; };
 		A94F03A81A0281960030F131 /* NSString+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Base64Additions.m"; path = "../HelperCategories/NSString+Base64Additions.m"; sourceTree = "<group>"; };
 		A9861ADC19FD229000015DD5 /* SIPropertyObjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPropertyObjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,10 +75,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A94399401AC59AEE00F3D4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94399451AC59AEE00F3D4A5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9861AD919FD229000015DD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94399581AC59B6400F3D4A5 /* SIPropertyObjects.framework in Frameworks */,
 				A9861AE019FD229000015DD5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A9861ADC19FD229000015DD5 /* SIPropertyObjects.app */,
+				A94399441AC59AEE00F3D4A5 /* SIPropertyObjects.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,20 +165,53 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A94399411AC59AEE00F3D4A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A943995C1AC59B9300F3D4A5 /* SIPOObject.h in Headers */,
+				A943995D1AC59B9A00F3D4A5 /* Base64.h in Headers */,
+				A943995E1AC59BA000F3D4A5 /* NSString+Base64Additions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		A9861ADB19FD229000015DD5 /* SIPropertyObjects */ = {
+		A94399431AC59AEE00F3D4A5 /* SIPropertyObjects */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9861AF919FD229100015DD5 /* Build configuration list for PBXNativeTarget "SIPropertyObjects" */;
+			buildConfigurationList = A94399501AC59AEE00F3D4A5 /* Build configuration list for PBXNativeTarget "SIPropertyObjects" */;
 			buildPhases = (
-				A9861AD819FD229000015DD5 /* Sources */,
-				A9861AD919FD229000015DD5 /* Frameworks */,
-				A9861ADA19FD229000015DD5 /* Resources */,
+				A943993F1AC59AEE00F3D4A5 /* Sources */,
+				A94399401AC59AEE00F3D4A5 /* Frameworks */,
+				A94399411AC59AEE00F3D4A5 /* Headers */,
+				A94399421AC59AEE00F3D4A5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SIPropertyObjects;
+			productName = SIPropertyObjects;
+			productReference = A94399441AC59AEE00F3D4A5 /* SIPropertyObjects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9861ADB19FD229000015DD5 /* SIPropertyObjectsEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9861AF919FD229100015DD5 /* Build configuration list for PBXNativeTarget "SIPropertyObjectsEditor" */;
+			buildPhases = (
+				A9861AD819FD229000015DD5 /* Sources */,
+				A9861AD919FD229000015DD5 /* Frameworks */,
+				A9861ADA19FD229000015DD5 /* Resources */,
+				A94399591AC59B6B00F3D4A5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94399571AC59B5C00F3D4A5 /* PBXTargetDependency */,
+			);
+			name = SIPropertyObjectsEditor;
 			productName = SIPropertyObjects;
 			productReference = A9861ADC19FD229000015DD5 /* SIPropertyObjects.app */;
 			productType = "com.apple.product-type.application";
@@ -164,12 +238,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9861ADB19FD229000015DD5 /* SIPropertyObjects */,
+				A9861ADB19FD229000015DD5 /* SIPropertyObjectsEditor */,
+				A94399431AC59AEE00F3D4A5 /* SIPropertyObjects */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A94399421AC59AEE00F3D4A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9861ADA19FD229000015DD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,26 +259,42 @@
 				A9861AEA19FD229000015DD5 /* InfoPlist.strings in Resources */,
 				A9861AF019FD229000015DD5 /* Credits.rtf in Resources */,
 				A9861AF619FD229100015DD5 /* MainMenu.xib in Resources */,
+				A943995F1AC59E4C00F3D4A5 /* SIPropertyObjects-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A943993F1AC59AEE00F3D4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94399531AC59B3500F3D4A5 /* SIPOObject.m in Sources */,
+				A94399541AC59B3C00F3D4A5 /* Base64.m in Sources */,
+				A94399551AC59B4400F3D4A5 /* NSString+Base64Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9861AD819FD229000015DD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9861AEC19FD229000015DD5 /* main.m in Sources */,
 				A9861AF319FD229000015DD5 /* SIPOAppDelegate.m in Sources */,
-				A9861AFE19FD22B800015DD5 /* SIPOObject.m in Sources */,
-				A9861B0419FFCD9700015DD5 /* Base64.m in Sources */,
 				A9861B0719FFF64300015DD5 /* SIPODataView.m in Sources */,
-				A94F03A91A0281960030F131 /* NSString+Base64Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A94399571AC59B5C00F3D4A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94399431AC59AEE00F3D4A5 /* SIPropertyObjects */;
+			targetProxy = A94399561AC59B5C00F3D4A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A9861AE819FD229000015DD5 /* InfoPlist.strings */ = {
@@ -226,6 +324,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A94399511AC59AEE00F3D4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SIPropertyObjects/SIPropertyObjects-Prefix.pch";
+				INFOPLIST_FILE = "SIPropertyObjects/SIPropertyObjects-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		A94399521AC59AEE00F3D4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SIPropertyObjects/SIPropertyObjects-Prefix.pch";
+				INFOPLIST_FILE = "SIPropertyObjects/SIPropertyObjects-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		A9861AF719FD229100015DD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -312,6 +442,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A94399501AC59AEE00F3D4A5 /* Build configuration list for PBXNativeTarget "SIPropertyObjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94399511AC59AEE00F3D4A5 /* Debug */,
+				A94399521AC59AEE00F3D4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A9861AD719FD229000015DD5 /* Build configuration list for PBXProject "SIPropertyObjects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -321,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9861AF919FD229100015DD5 /* Build configuration list for PBXNativeTarget "SIPropertyObjects" */ = {
+		A9861AF919FD229100015DD5 /* Build configuration list for PBXNativeTarget "SIPropertyObjectsEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9861AFA19FD229100015DD5 /* Debug */,
