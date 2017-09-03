@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SIPODataView.h"
 
 @interface SIPOObject : NSObject
 

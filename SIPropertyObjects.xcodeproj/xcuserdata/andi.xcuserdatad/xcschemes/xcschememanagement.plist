@@ -7,11 +7,21 @@
 		<key>SIPropertyObjects.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+		<key>SIPropertyObjects_macOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A91ECA351F587B3C009604D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A9861ADB19FD229000015DD5</key>
 		<dict>
 			<key>primary</key>
